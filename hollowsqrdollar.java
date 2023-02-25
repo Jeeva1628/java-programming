@@ -1,29 +1,29 @@
 import java.util.Scanner;
-public class hollowsqrdollar
+class hollowsqrdollar
 {
   private static Scanner sc;	
    public static void main(String[] args) 
 {
     sc = new Scanner(System.in);		
-    System.out.print("Enter Hollow Square Side = ");
-    int side = sc.nextInt();
-    System.out.print("Enter symbol = ");
-    String sym= sc.next();	
-    System.out.println("Printing Hollow Square Pattern");		
-    for (int i = 0; i < side; i++ ) 
+    System.out.print("Enter Side = ");
+    int n=sc.nextInt();
+    System.out.print("Enter symbol to be printed = ");
+    String sym=sc.next();	
+    System.out.println("------Printing Hollow Square Pattern-----");		
+    for (int i=0;i<n;i++ ) 
     {
-     for (int j = 0 ; j < side; j++ ) 
+     for (int j=0;j<n;j++) 
       {
-        if (i == 0 || i == side - 1 || j == 0 || j == side - 1) 
+        if (i==0 || i==n-1 || j==0 || j==n-1) 
          {
-	System.out.print(sym);
-          }
+	     System.out.print(sym);
+         }
         else 
-          {
-             	System.out.print(" ");
-           }
+         {
+            System.out.print(" ");
+         }
 	}
-	System.out.println();
+	 System.out.println();
 	}
-       }
+      }
 }
