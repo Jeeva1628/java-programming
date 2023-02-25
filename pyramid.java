@@ -1,26 +1,28 @@
 import java.util.Scanner;
-class pyramid
+public class pyramid
 {
-public static void main(String[] args)
+    public static void main(String[] args)
+    {
+             
+Scanner sc=new Scanner(System.in);
+System.out.println("Enter N : ");
+int n=sc.nextInt();	 
+System.out.print("Enter Symbol : ");
+char c = sc.next().charAt(0);
+ 
+for(int i=n;i>0 ;i--)
 {
-int i,j,n;
-Scanner s=new Scanner(System.in);
-System.out.println("enter the value:");
-int x=s.nextInt();
-System.out.println("input the maximum number of time");
-n=s.nextInt();
-for(i=1;i<=n;i++){
-for(j=1;j<i;j++){
-System.out.print(x+" ");
+ for(int j=0;j<n-i;j++)
+                
+ {
+ System.out.print(" ");
+ }
+ for(int j=0;j<(i*2)-1;j++)
+                
+{
+System.out.print(c);
 }
-System.out.println();
-}
-for(i=0;i<=n;i++){
-for(j=n;j>i;j--){
-System.out.print(x+" ");
-}
-System.out.println();
-}
-
-}
+ System.out.println();
+      }                          
+    }
 }

@@ -14,6 +14,7 @@ char x=a.charAt(i);
 if(x=='a'||x=='e'||x=='i'||x=='o'||x=='u')
 {
 vcount++;
+System.out.print(x+" ");
 }
 }
 System.out.println("no of vowels in the string:"+vcount);

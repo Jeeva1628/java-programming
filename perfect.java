@@ -1,30 +1,45 @@
 import java.util.Scanner;
-class perfect
+public class perfect
 {
-    public static void main(String[] args) 
-    {
-        int n, sum = 0;
-        Scanner s = new Scanner(System.in);
-        System.out.print("Enter any integer you want to check:");
-        n = s.nextInt();
-        for(int i = 1; i < n; i++)
-        {
-            if(n%i == 0)
-            {
-                sum = sum + i;
-            }
-        }
-        if(sum==n)
-        {
-            System.out.println("Given number is Perfect");
-        }
-        else
-        {
-            System.out.println("Given number is not Perfect");
-        }    
-    }
-    int divisor(int x)
-    {
-       return x;
-    }
+public static void main(String[] args) {
+Scanner s=new Scanner(System.in);
+System.out.println("Enter no.of perfect numbers you want print:--");
+try{
+ int a=s.nextInt();
+ int i,x=0,j;
+ if(a==0)
+ {
+ System.out.println("The result is-: 0");
+ }
+ else if(a>0)
+ {
+ int b=0;
+ for(j=2;j<100000000;j++)
+ {
+ if(b<a) 
+ x=1;
+ for(i=2;i<j;i++)
+ {
+ if(j%i==0)
+ {
+ x=x+i;
+ }
+ }
+ if(x==j)
+ {
+ System.out.print(","+j);
+ b=b+1;
+ }
+ }
+ }
+ else 
+ {
+ System.out.println("Invalid");
+ }
+}
+catch(Exception e)
+{
+ System.out.println("Invalid");
+}
+}
 }

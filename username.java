@@ -1,14 +1,20 @@
 import java.util.Scanner;
-class username{
- public static void main(String [] args){
- Scanner in=new Scanner(System.in);
- System.out.println("enter the user name");
- String str1=in.nextLine();
- System.out.println("Reenter the user name");
- String str2=in.nextLine();
- if(str1.equals(str2)){
- System.out.println("User name is valid");}
- else{
- System.out.println("User name is not valid");}
- }
+class username
+{
+public static void main(String[] args)
+{
+Scanner sc=new Scanner (System.in);
+System.out.print("enter the username:");
+String user1=sc.nextLine();
+System.out.print("reenter the username:");
+String user2=sc.nextLine();
+if(user2==user1)
+{
+System.out.println("username is valid");
+}
+else
+{
+System.out.println("username is invalid");
+}
+}
 }
